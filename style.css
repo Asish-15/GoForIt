@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;
+    color: #fff;
+    margin: 20px;
+}
+.step {
+    margin-bottom: 10px;
+}
+.step-title {
+    cursor: pointer;
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+}
+.lecture {
+    margin-left: 20px;
+    display: none;
+}
+.lecture-title {
+    cursor: pointer;
+    background: #444;
+    padding: 5px;
+    margin: 5px 0;
+    border-radius: 3px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 5px 0;
+}
+
+
+th, td {
+    border: 1px solid #555;
+    padding: 8px;
+    text-align: left;
+}
+  
+td:nth-child(2), td:nth-child(2) {
+    text-align: left; /* Left-align for Topic, Status, Difficulty */
+}
+th:nth-child(1),th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5), th:nth-child(6), 
+td:nth-child(1), td:nth-child(4), td:nth-child(5), td:nth-child(6) {
+    text-align: center; /* Center-align for Blog, YouTube */
+}
+th {
+    background: #444;
+}
+td input {
+    margin-right: 5px;
+}
+
+.solved {
+    color: #ff6200;
+}
+.progress, .blog, .youtube {
+    color: #ccc;
+   
+}
+
+/*.blog a, .youtube a {
+    color: #1e90ff;
+    text-decoration: none;
+}*/
+
+
+.progress, .blog, .youtube {
+    color: #ccc;
+    padding: 2px; /* Reduced padding for Blog, YouTube, Duration content */
+}
+
+.blog a:hover, .youtube a:hover {
+    text-decoration: underline;
+}
