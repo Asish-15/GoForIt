@@ -73,3 +73,34 @@ td input {
 .blog a:hover, .youtube a:hover {
     text-decoration: underline;
 }
+
+.navbar {
+    background: #333;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+.nav-link:hover {
+    text-decoration: underline;
+}
+.nav-link.active {
+    color: #ff6200;
+    font-weight: bold;
+}
+.route-content {
+    margin-top: 50px;
+}
+.route-content h2 {
+    background: #444;
+    padding: 10px;
+    border-radius: 5px;
+}
+.route-content p {
+    margin: 10px 0;
+}
