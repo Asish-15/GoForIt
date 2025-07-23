@@ -40,3 +40,23 @@ function navigate(route) {
 document.addEventListener('DOMContentLoaded', () => {
     navigate('aws');
 });
+
+
+function setActiveLink(element, section) {
+    document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+    });
+    element.classList.add('active');
+    if (typeof navigate === 'function') {
+        navigate(section);
+    }
+}
+
+function handleButtonClick(action) {
+    const button = event.target;
+    button.style.backgroundColor = '#e55a00';
+    setTimeout(() => {
+        button.style.backgroundColor = 'transparent';
+    }, 200);
+    console.log(`${action} button clicked`);
+}
