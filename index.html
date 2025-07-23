@@ -15,7 +15,8 @@
             <a href="#aws" class="nav-link active" onclick="setActiveLink(this, 'aws')">AWS</a>
             <a href="#azure" class="nav-link" onclick="setActiveLink(this, 'azure')">Azure</a>
             <a href="#gcp" class="nav-link" onclick="setActiveLink(this, 'gcp')">GCP</a>
-            <a href="#other" class="nav-link" onclick="setActiveLink(this, 'contact')">Contact</a>
+            <a href="#oracle" class="nav-link" onclick="setActiveLink(this, 'oracle')">Oracle</a>
+            <a href="#contact" class="nav-link" onclick="setActiveLink(this, 'contact')">Contact</a>
         </div>
         <div class="nav-links-right">
             <a href="#login" class="nav-button" onclick="handleButtonClick('login')">Login</a>
@@ -2162,12 +2163,73 @@
             </div>
         </div>
         </div>
+
+
         <div id="azure-content" class="route-content" style="display: none;">
-            <h2>Azure Content</h2>
-            <p>Coming soon...</p>
+            <div class="step">
+            <div class="step-title" onclick="toggleLecture('stepa1')"><span class="toggle-icon"> ▶ </span>1: Introduction to  Azure </div>
+            <div id="stepa1" class="lecture">
+                <div class="lecture-title" onclick="toggleLecture('leca1')"><span class="toggle-icon"> ▶ </span>Lec 1: What/Why/Use/ Cloud Computing?  </div>
+                <div id="leca1" class="lecture">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Topic</th>
+                                <th>Tags</th>
+                                <th>Duration</th>
+                                <th>Blog</th>
+                                <th>YouTube</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"> </td>
+                                <td><span class="title">What is Cloud Computing? Why </span></td>
+                                <td><span class="solved">Tags</span></td>
+                                <td><span class="progress">0 mins</span></td>
+                                <td><span class="blog"><a href="#" target="_blank"><i class="bi bi-medium"></i></a></span></td>
+                                <td><span class="youtube"><a href="#" target="_blank"><i class="bi bi-youtube"></i></a></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="lecture-title" onclick="toggleLecture('leca2')"><span class="toggle-icon"> ▶ </span>Lec 2: Azure Account Creation </div>
+                <div id="leca2" class="lecture">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Topic</th>
+                                <th>Tags</th>
+                                <th>Duration</th>
+                                <th>Blog</th>
+                                <th>YouTube</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><input type="checkbox"> </td>
+                                <td><span class="title">Title</span></td>
+                                <td><span class="solved">Tags</span></td>
+                                <td><span class="progress">0 mins</span></td>
+                                <td><span class="blog"><a href="" target="_blank"><i class="bi bi-medium"></i></a></span></td>
+                                <td><span class="youtube"><a href="" target="_blank"><i class="bi bi-youtube"></i></a></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+            
+
         </div>
         <div id="gcp-content" class="route-content" style="display: none;">
             <h2>GCP Content</h2>
+            <p>Coming soon...</p>
+        </div>
+        <div id="oracle-content" class="route-content" style="display: none;">
+            <h2>Oracle Cloud</h2>
             <p>Coming soon...</p>
         </div>
 
